@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login"
+    tools:context=".DalgonaActivity">
+
+
+    <ImageView
+        android:id="@+id/foodImageDalgona"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dalgonacoffe" />
+
+    <TextView
+        android:id="@+id/foodDescriptionDalgona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImageDalgona"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Dalgona coffee adalah minuman kopi yang terdiri dari campuran bubuk kopi, gula, dan air panas yang dikocok hingga menghasilkan busa kental yang lezat, kemudian disajikan di atas susu dingin, menciptakan lapisan kontras antara kopi pekat dan susu yang nikmat." />
+
+    <RatingBar
+        android:id="@+id/foodRatingDalgona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodDescriptionDalgona"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:stepSize="0.5" />
+
+</RelativeLayout>

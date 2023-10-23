@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login"
+    tools:context=".JusActivity">
+
+    <ImageView
+        android:id="@+id/foodImageJus"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/jus" />
+
+    <TextView
+        android:id="@+id/foodDescriptionJus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImageJus"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Jus stroberi adalah minuman berbahan dasar jus segar dari buah stroberi yang memiliki rasa manis, asam, dan segar, dengan warna merah cerah yang menggoda, seringkali disajikan dalam berbagai penyajian yang menyegarkan seperti dingin atau dengan tambahan es." />
+
+    <RatingBar
+        android:id="@+id/foodRatingJus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodDescriptionJus"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:stepSize="0.5" />
+
+</RelativeLayout>

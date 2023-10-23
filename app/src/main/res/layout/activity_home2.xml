@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".HomeActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="324dp"
+            android:layout_height="177dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="32dp"
+        android:layout_marginBottom="-28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/ImageViewHome"
+                android:layout_width="81dp"
+                android:layout_height="87dp"
+                android:src="@drawable/makan" />
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Fooddrink"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ImageViewBahasa"
+                android:layout_width="87dp"
+                android:layout_height="78dp"
+                android:src="@drawable/bahasa" />
+
+            <TextView
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Bahasa"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ImageViewDeveloper"
+                android:layout_width="89dp"
+                android:layout_height="81dp"
+                android:src="@drawable/developer" />
+
+            <TextView
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Developer"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ImageViewOrang"
+                android:layout_width="87dp"
+                android:layout_height="67dp"
+                android:src="@drawable/orang" />
+
+            <TextView
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Profil"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

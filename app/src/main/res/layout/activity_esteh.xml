@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login"
+    tools:context=".EstehActivity">
+
+    <ImageView
+        android:id="@+id/foodImageEsteh"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/esteh" />
+
+    <TextView
+        android:id="@+id/foodDescriptionEsteh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImageEsteh"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Es teh adalah minuman segar yang terbuat dari teh dingin yang diberi es batu dan pemanis, seringkali dihidangkan dengan potongan jeruk atau hiasan lainnya." />
+
+    <RatingBar
+        android:id="@+id/foodRatingEsteh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodDescriptionEsteh"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:stepSize="0.5" />
+
+</RelativeLayout>

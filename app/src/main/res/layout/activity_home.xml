@@ -1,0 +1,438 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgputih"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iklanburger" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iklanmieayam" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="2in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iklanpizza" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext">
+
+            <CheckBox
+                android:id="@+id/burger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:id="@+id/ImageViewBurger"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:src="@drawable/burger" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="15dp"
+                android:text="Burger"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="145dp"
+                android:text="Rp. 25.000"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/jumlahburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext">
+
+            <CheckBox
+                android:id="@+id/mieayam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:id="@+id/ImageViewMieayam"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:src="@drawable/mieayam" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="15dp"
+                android:text="Mie Ayam"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:text="Rp. 15.000"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/jumlahmieayam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext">
+
+            <CheckBox
+                android:id="@+id/pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:id="@+id/ImageViewPizza"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:src="@drawable/pizza" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="15dp"
+                android:text="pizza"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="145dp"
+                android:text="Rp. 35.000"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/jumlahpizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext">
+
+            <CheckBox
+                android:id="@+id/esteh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:id="@+id/ImageViewEsteh"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:src="@drawable/esteh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="15dp"
+                android:text="ice tea"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="145dp"
+                android:text="Rp. 5.000"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/jumlahesteh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext">
+
+            <CheckBox
+                android:id="@+id/jus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:id="@+id/ImageViewJus"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:src="@drawable/jus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="15dp"
+                android:text="Juice Strawberry "
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="145dp"
+                android:text="Rp. 10.000"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/jumlahjus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext">
+
+            <CheckBox
+                android:id="@+id/dalgonacoffe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:id="@+id/ImageViewDalgona"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:src="@drawable/dalgonacoffe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="15dp"
+                android:text="Dalgona Coffe"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="145dp"
+                android:text="Rp. 15.000"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/jumlahdalgonacoffe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/black"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:text="Pesan" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
